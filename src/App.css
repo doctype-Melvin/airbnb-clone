@@ -10,10 +10,39 @@ html, body {
 
 .nav-container {
   display: flex;
+  align-items: center;
   box-shadow: 0px 0px 30px 2px rgb(200, 200, 200);
   padding: 20px;
 }
 
 .logo {
   width: 120px;
+}
+
+.hero-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-family: 'Poppins';
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gridImg {
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.text-container {
+  max-width: 400px;
+}
+
+.exp {
+  font-size: 2.5rem;
+}
+
+.para {
+  font-size: 1.15rem;
 }
