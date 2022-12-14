@@ -4,7 +4,7 @@
 
 :root {
   --grey: rgb(111, 111, 111);
-  --light-grey: rgb(214, 213, 213);
+  --light-grey: rgb(221, 219, 219);
 }
 
 html, body {
@@ -55,13 +55,22 @@ html, body {
 .card-container {
   padding: 10px;
   position: relative;
+  margin-left: 40px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .label {
   position: absolute;
   left: 20px;
   top: 20px;
-  padding: 1px 5px;
+  padding: 2px 6px;
   background-color: var(--light-grey);
   border-radius: 3px;
 }
