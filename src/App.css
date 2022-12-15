@@ -4,7 +4,7 @@
 
 :root {
   --grey: rgb(111, 111, 111);
-  --light-grey: rgb(221, 219, 219);
+  --light-grey: rgb(232, 232, 232);
 }
 
 html, body {
@@ -85,6 +85,14 @@ html, body {
   margin-right: 5px;
 }
 
-.no-rating {
+.no-rating, .location {
   color: var(--grey);
+}
+
+.price {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
 }

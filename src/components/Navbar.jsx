@@ -1,10 +1,10 @@
 import React from "react";
-import logo from '../assets/pngwing.com.png'
 
-function Navbar() {
+
+function Navbar(props) {
     return (
         <div className="nav-container">
-            <img src={logo} alt="logo" className="logo"></img>
+            <img src={props.logo} alt="logo" className="logo"></img>
             <div></div>
         </div>
     )
