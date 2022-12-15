@@ -2,15 +2,25 @@ import React from "react";
 
 
 export default function Card(props){
+    const star = './public/assets/star.png'
+    let labelText
+    
+        if (props.open === 0) {
+            labelText = 'SOLD OUT'
+        }else if (props.location === 'Online') {
+            labelText = 'ONLINE'
+    }  
+    
     return (
         <div className="card-container">
-            <span className="label">{props.open} </span>
-            <img src={props.img} className="photo"></img>
+            {/* Use conditional rendering for label text */}
+        {labelText && <span className="label">{labelText}</span>}
+            <img src={props.coverImg} className="photo"></img>
             <div className="info-box">
                 <div className="rating">
-                    <img src={props.star} className="star"></img>
-                    <span className="rating">{(props.rating)}</span>
-                    <span className="no-rating"> ({props.reviewCount}) </span>
+                    <img src={star} className="star"></img>
+                    <span className="rating">{(props.stats.rating)}</span>
+                    <span className="no-rating"> ({props.stats.reviewCount}) </span>
                     <span className="location">&#x2022; {props.location}</span>
                 </div>
                 <span className="phrase">{props.title}</span>
